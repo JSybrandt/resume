@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.0 (3/5/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt, before={\vspace*{-\baselineskip}}} % , topsep=-9pt
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+% Comment out this figure block if you don't want a photo
+%\begin{figure}
+%\hfill % Right align the photo
+%\includegraphics[width=0.8\columnwidth]{photo.jpg} % Your photo
+%\end{figure}
+\small % Smaller font size
+\Sep
+
+%\Sep % Some whitespace
+%\textbf{Address} \\
+%123 Broadway \\ % Address 1
+%City, State 12345 \\ % Address 2
+%Country \\ % Address 3
+\vfill % Whitespace under this block to push it up under the photo
+
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\userinformation % Print your information in the left column
+
+%\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\href{http://www.linkedin.com/in/justin-sybrandt}{\cvheading{Justin Sybrandt}} % Large heading - your name
+
+ % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+{\centering
+\begin{tabular}{lrlrl}
+	\multirow{2}{*}{\textbf{\Large Ph.D. Student}}
+	& Email: & \href{mailto:justin@sybrandt.com}{Justin@Sybrandt.com} &
+	Website: & \href{http://sybrandt.com}{Justin.Sybrandt.com} \\
+	& GitHub: & \href{http://github.com/JSybrandt}{JSybrandt} &
+	Phone: &	(484) 354-8692 \\
+\end{tabular}\par
+}
+
+
+\aboutme{About Me}{
+	The power of machine learning (ML) has risen drastically over the last decade. Over time, we will likely see the growth of ML in all aspects of our lives, from health care to self-driving cars. I have begun to explore exciting new applications of ML in new domains such as medicine and civil engineering. I would like to help improve ML algorithms and extend them to new problems so they might do the most public good, and improve the quality of life for people worldwide.
+	
+  %Since starting a Ph.D. program in Fall 2016, I have already submitted a first-authored paper and helped write two grant proposals. The society-changing power of machine learning only continues to grow as I delve deeper into its potential. Hypothesis generation, the focus of my current research, highlights for me the potential machine learning has to improve human life and aid in scientific discovery. I hope to continue working to improve the quality of these system, and in turn, improve the quality of life for people worldwide.
+  %I currently am interested in Machine Learning with applications in Civil Engineering and Medicine. I am incredibly interested in the potential that cross-disciplinary collaborations have to further science and benefit society. During my time at NERSC, I saw these sorts of projects and the type of work happening at our National Labs which inspired me to pursue similar work in my career.
+	}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+\CVItem{2016-Present, Clemson University}{
+	\begin{itemize}
+    \item Ph.D. in computer science. (GPA:4.0)
+	\item Focus on machine learning and text mining.
+	\item Recipient of the GAANN DAISE PhD. fellowship.
+	\end{itemize}
+	}
+
+\CVItem{2012 - 2016, Grove City College}{
+	\begin{itemize}
+	\item BS in computer science, minor in mathematics.
+	\item Graduated Summa Cum Laude with a GPA of 3.85.
+	\item Top of class in computer science with a major GPA of 3.95.
+	\end{itemize}
+	}
+
+\CVItem{Honors and Awards}{
+	\begin{itemize}
+		\item Recipient of a KDD'17 travel award.
+		\item Member of the Kappa Mu Epsilon National Mathematics Honor Society.
+		\item Member of the Alpha Tau Mu chapter of Mortarboard.
+		\item President of the Grove City Chapter of the ACM.
+	\end{itemize}	
+	}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+\CVSection{Papers and Presentations}
+
+\CVItem{MOLIERE: Automatic Biomedical Hypothesis Generation System}{
+	\begin{itemize}
+		\item Accepted for oral presentation at KDD 2017.
+		\item Awarded "Best Final Project and Poster Presentation" in Data Science student conference.
+		\item Data mining 24.5 million medical documents to form a large multi-modal network.
+		\item Models hypotheses using Latent Dirichlet Allocation.
+	\end{itemize}
+}
+
+\CVItem{Rapid Replication of Multi-Petabyte File Systems}{
+	\begin{itemize}
+		\item Presented at PDSW 2015 as a Work In Progress.
+		\item Presented at the ACM student poster session at SC15.
+		\item Built Distsync, a distributed tool capable of replicating large GPFS file systems.
+		\item Deployed system with NERSC to facilitate large, high speed data transfers.
+	\end{itemize}
+}
+
+
+\CVSection{Development Skills and Technologies}
+
+{\centering
+	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}  p{0.2\textwidth}}
+		\bluebullet C++  & \bluebullet Python & \bluebullet Java & \bluebullet Bash\\
+		\bluebullet SQL & \bluebullet C & \bluebullet Scala & \bluebullet Julia \\
+		\bluebullet Linux &	\bluebullet VIM & \bluebullet LaTeX & \bluebullet Git \\
+	\end{tabular}\par
+}
+
+\pagebreak
+
+
+\CVSection{Experience}
+
+\CVItem{Summer 2017, Graduate Research Assistant - Los Alamos National Lab}{
+	\begin{itemize}
+		\item Developed high performance software in julia for non-negative matrix factorization.
+		\item Extended MOLIERE to water resources research with the computational environmental science group (EES-16).
+	\end{itemize}
+}
+
+\CVItem{2015-2016, Programming Intern - Vigilant Cyber Systems, Inc.}{
+	\begin{itemize}
+		\item Developed a visualization library in Scala using ScalaFX.
+		\item Independently managed time when working remotely.
+		\item Balanced senior-level course work with development.
+	\end{itemize}
+}
+
+\CVItem{Summer 2015, Student Researcher - UC Berkeley \& NERSC}{
+	\begin{itemize}
+	\item Designed and implemented a tool to quickly synchronize multi-petabyte General Parallel File Systems.
+	\item Presented a poster at the ACM Student Poster Session at SC'15.
+	\item Presented a work in progress paper at the Parallel Data Storage Workshop.
+\end{itemize}
+}
+
+\CVItem{Summer 2014, Student Researcher - Grove City College}{
+	\begin{itemize}
+		\item Added distribution preferences to Data Stream Management Systems (DSMS).
+		\item Simulated new DSMS features in Python.
+		\item Studied modern DSMS through recent research papers.
+		\item Presented a poster at the Grove City student poster session.
+	\end{itemize}
+	}
+
+\CVItem{2012-2014, Programming  Intern - Gravic Inc.}{
+	\begin{itemize}
+		\item Worked on a six person team developing tools for administering exams.
+		\item Collaborated with corporate partners to design features which allowed our products to share data.
+		\item Gained familiarity with project management while extending the Remark VB.NET code base.
+	\end{itemize}
+	}
+
+\Sep
+
+\CVSection{Research Interests}
+{\centering
+	{\begin{tabular}{l l l l}
+	\bluebullet Hypothesis Generation & \bluebullet Machine Learning &  \bluebullet Distributed Systems & \bluebullet Big Data\\
+	\bluebullet Text Mining & \bluebullet Database Systems &  \bluebullet Language Design & \bluebullet Artificial Intelligence\\
+	\end{tabular}}\par
+}
+
+
+\end{document}
